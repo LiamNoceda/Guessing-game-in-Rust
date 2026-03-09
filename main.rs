@@ -29,6 +29,9 @@ fn main() {
             Ordering::Equal => {
                 println!("You win");
                 break}
+        println!("Press Enter to exit...");
+        let mut exit = String::new();
+        io::stdin().read_line(&mut exit).unwrap();
         }
     }
 }
